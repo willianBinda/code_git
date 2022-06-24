@@ -1,0 +1,76 @@
+#########  da web para o pc ##################
+
+para criar do gitHub para pc vai e cria um "readme"
+
+git clone "endereço" 	  	= clonar do gitHub da web com pasta readme
+--------------------------------------------------------------------------
+git status 		  	= como esta o meu repositorio, o que tem de arquivo novo
+--------------------------------------------------------------------------
+git add "nome do arquivo"	= para adicionar o arquivo em especifico para a area de preparacao
+--------------------------------------------------------------------------
+git add .  		 	= para adicionar todos os arquivos nao salvos para a area de preparacao
+--------------------------------------------------------------------------
+git commit -m            	= vai pegar todos os arquivos que estao na area de preparacao para a area de versionamento
+--------------------------------------------------------------------------
+git log 			= para ver o historico dos commits que ja foram feitos
+--------------------------------------------------------------------------
+git push origin main	  	= empura os arquivos para a nuvem/gitHub
+--------------------------------------------------------------------------
+git pull origin main	  	= para pegar do gitHub e trazer para o pc
+--------------------------------------------------------------------------
+pode editar o aquivo pelo gitHub e depois puxar ele de volta editado
+--------------------------------------------------------------------------
+
+############# do pc para web #################
+
+sen add readme
+--------------------------------------------------------------------------
+git init 			= para iniciar um repositorio git 
+--------------------------------------------------------------------------
+git branch -M main		= para alterar o nome da branch master para main local(na maquina)
+--------------------------------------------------------------------------
+git remote add origin "https://github.com/willianBinda/versao_LTS02.git" -> local para onde subir
+--------------------------------------------------------------------------
+git push origin main 		= para subir o arquivo para web
+--------------------------------------------------------------------------
+
+############### branch's #####################
+
+branch seria um ramificacao
+
+git branch "nome da branch"	= cria uma ramificacao com o nome tal
+--------------------------------------------------------------------------
+git branch 			= mostra as branch's criadas, se estiver verde indica q vc esta dentro da branch tal
+--------------------------------------------------------------------------
+git checkout "nome da branch que deseja entrar com aspas simples" = entra na branch que vc digitou
+--------------------------------------------------------------------------
+git log 			= para ver quantos commits tem na branch
+--------------------------------------------------------------------------
+git merge "nome da ramificacao"			= tras a alteracao da ramificacao para a branch main
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+
+se criar uma branch e depois subir ela no gitHub ela nao altera o main so que no main nao mostra ela fica no ramo01
+da pra fazer alteracao na main e depois subir so que mandar a ramificacao ou seja
+faz alteracoes na main e depois da um git push origin ramo01 
+e depois se vc r para a pasta main git checkout main a alteracao nao estara la e sim na ramificacao
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
