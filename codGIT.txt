@@ -4,6 +4,8 @@ para criar do gitHub para pc vai e cria um "readme"
 
 git clone "endereço" 	  	= clonar do gitHub da web com pasta readme
 --------------------------------------------------------------------------
+git remote -v				= mostra o endereço remoto ue tem adicionado
+--------------------------------------------------------------------------
 git status 		  	= como esta o meu repositorio, o que tem de arquivo novo
 --------------------------------------------------------------------------
 git add "nome do arquivo"	= para adicionar o arquivo em especifico para a area de preparacao
@@ -58,6 +60,79 @@ e depois se vc r para a pasta main git checkout main a alteracao nao estara la e
 
 
 
+########################################################################
+
+
+PASSO A PASSO
+
+git init
+---------
+git add .
+---------
+git commit -m "comentario"
+--------------------------
+git push -u origin master --> para enviar 
+--------------------------
+git pull origin master 	  <-- para trazer
+--------------------------
+
+
+#########################################################################################
+
+VIA SSH
+--------
+com chave de segurança
+---------
+ssh-keygen -C "nome"
+--------------------
+deixa sem senha na maquina local
+-------------------------------
+cd ~/.ssh 
+----------	essas duas vao mostrar a senha privada e publica
+ls
+-------------
+cat ~/.ssh/id_rsa.pub  = vai mostrar o conteudo do arquivo
+---------------------
+copiando o conteudo do arquivo e colando em profile/settings/SSH and GPG keys/new key
+
+
+######################################
+
+COMANDOS
+
+git diff    = mostra o que foi apagado e acrescentado = alterado
+----------------------------------------------------------------
+git restore --staged .  = remove todos da area de prepado para commit
+--------------------------------------------------------------------
+git add 'nome do arquivo'  = remove o arquivo especifico da area de prepado
+------------------------------------------------------------------------
+git restore --staged 'nome do arquivo'  = remove arquivo especifico
+-------------------------------------------------------------
+git fecth  = atualiza as informacoes de cabecalho
+---------------------------------------------------------------
+
+
+##########################################
+
+branchs na pratica
+
+git branch -l 			= mostra os branch e em qual vc esta ou fazer git branch da na mesma 
+---------------------------------------------------------
+git branch -la   		= lista os branch que estao no repositorio da nuvem
+-------------------------------------------------------------------------
+git branch -lav 		= mostra o ultimo commit 
+-------------------------------------------------------
+git checkout -b cadastro-usuario  = cria uma nova branch apartir da branch em que esta
+---------------------------------------------------------------
+git add.   git commit   antes de subir ela pra nuvem
+-----------------------------------------------------------
+git push -u origin nome da ramificacao  = joga a branch na nuvem se ele nao estiver na nuvem 
+
+caso ja esteja adicionado na nuvem so dar um git push
+-----------------------------------------------------------------
+para fazer um pull request requisitar um merge precisa jogar as branchs na nuvem e depois la ir em 
+pull request iniciar um e ir passo a passo e depois no vs ir na pasta em que foi dado o marge na nuvem e dar um 
+git pull para puxar da nuvem 
 
 
 
